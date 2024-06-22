@@ -20,3 +20,30 @@ probabilistic algorithm that efficiently determines whether a given number is pr
 using **pthreads** to process numbers in **batches**, **reducing** function **calls** to isPrime and **minimizing
 mutex**
 contention for improved performance.
+
+
+
+
+## Benchmarks
+
+### Tested on:
+
+- **Os Name:** Pop!_OS 22.04 LTS
+- **CPU:** Intel core i7-9750H CPU - **ONLY 4 Threads over 12** where used for testing
+- **Memory:** 32 GiB
+
+| Seed | Size Of Numbers | Time Takes Standard Prime | Time Takes Optimized Prime |
+|------|-----------------|---------------------------|----------------------------|
+| 10   | 100,000         | 0.681s                    | 0.077s                     |
+| 10   | 1,000,000       | 5.675s                    | 0.725s                     |
+| 10   | 10,000,000      | 55.877s                   | 5.067s                     |
+| 10   | 100,000,000     | 8m55.51s                  | 52.798s                    |
+| 10   | 1,000,000,000   | Too Long !                | 8m26.27s                   |
+
+---
+
+## Conclusion
+
+The optimized prime algorithm significantly outperforms the standard algorithm across all tested scenarios,
+demonstrating the effectiveness of parallelization and algorithmic optimization in improving performance. The optimized
+algorithm achieves faster processing times, making it suitable for real-time applications with large data streams.
