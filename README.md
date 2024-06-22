@@ -1,6 +1,6 @@
 # Prime Number Threads
 
-## [Task Description] (HW2b.pdf)
+## [Task Description](HW2b.pdf)
 The objective is to process an endless stream of numbers and count prime numbers efficiently. The provided random number generator `generator.c` simulates this endless stream. 
 The task is to achieve a performance that is at least 4 times faster than the standard prime algorithm without modifications, or 10 times faster with changes to the algorithm.
 The solution must be highly performant and memory efficient, using only 2MB of RAM
